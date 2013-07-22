@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/Style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css"/>
+    
+    
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>    
+    <div id="central">
+    <form id="Form1" runat="server">
+        <div id="header">
+            <div id="headerleftside">                
+            </div>
+            <div id="headerrightside">
+                <div id="headerrightside-topmenu">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <ul class="nav">
+                                <li class="active"><a href="#">HOME</a></li>
+                                <li><a href="#">EVENTS</a></li>
+                                <li><a href="#">GROUPS</a></li>
+                                <li><a href="#">BLOGS</a></li>
+                                <li><a href="#">ACTIVITIS</a></li>
+                                <li><a href="#">ADMIN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.container -->
+            <!--                                   ssssssssssssssssssssss--->
+            <!--<div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
+                    </Items>
+                </asp:Menu>
+            </div>-->
+        </div>
+        <!--END OF HEADER-->
+        <div class="clear"></div>
+        <div>
+            <div id="middletop">
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                        <div class="span5">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"/>
+                                <b>hello world!hello world!hello world!hello world!hello world!</b>
+                            </div>
+                            <div class="span2">
+                                <b>hello world!hello world!hello world!hello world!hello world!hello world!</b>
+                            </div>
+                            <div class="span3">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"/>
+                                <b>hello world!hello world!hello world!hello world!hello world!hello world!hello world!</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="middle">
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                        <div class="span5">
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+                        </div>
+                        <div class="span2">
+                        </div>
+                        <div class="span3">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+            <div id="footer">
+                <div class="footerleftside">  
+                    <h3></h3>
+                </div>
+                <div class="footerrightside">  
+                    <p> Privacy Policy  |  Terms of Use  |  Forum User Agreement<br />
+                        BitRules company. All rights reserved.<br />                        1700 Finch AVE Toronto Ont Ca M1T2M4  Tel: 416-902-7886 Services@BitRules.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/bootstrap/js/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-transition.js"></script>
+
+    <script src="assets/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-tooltip.js"></script>
+
+    <script src="assets/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-button.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-typeahead.js"></script>
+       
+</body>
+</html>

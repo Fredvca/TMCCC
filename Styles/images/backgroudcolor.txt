@@ -1,0 +1,2 @@
+#eff1e9
+page dimension: L x W = 1010p x 800p
